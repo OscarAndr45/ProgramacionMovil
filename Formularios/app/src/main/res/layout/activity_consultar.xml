@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:stretchColumns="1">
+
+        <!-- Título -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="CONSULTA ID"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Datos Estudiante -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos Estudiante"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvdocumento"
+                android:text="Documento:" />
+
+            <EditText
+                android:id="@+id/etDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese documento" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnConsultaIdEstudiante"
+                android:layout_width="wrap_content"
+                android:layout_span="2"
+                android:text="Consulta Id" />
+        </TableRow>
+
+        <TableRow>
+
+            <ListView
+                android:id="@+id/lvEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </TableRow>
+
+        <!-- Datos Cátedras -->
+        <TableRow>
+
+            <TextView
+                android:text="Datos Cátedras"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Nombre:" />
+
+            <EditText
+                android:id="@+id/etNombreCatedra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese nombre" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnConsultaIdCatedra"
+                android:layout_width="wrap_content"
+                android:layout_span="2"
+                android:text="Consultar Catedra" />
+        </TableRow>
+
+        <TableRow>
+
+            <ListView
+                android:id="@+id/lvCatedras"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_span="2"
+                android:text="Volver" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:foregroundTint="#009688"
+        android:orientation="vertical"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableRow
+            android:layout_height="87dp"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/tvtitulo"
+                android:layout_height="68dp"
+                android:layout_marginBottom="20dp"
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text="Formulario Documento"
+                android:textColor="#4CAF50"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvdocumento"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Documento:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Etdocumento"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fff"
+                android:hint="Documento"
+                android:padding="5dp"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/Btnguardar"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@color/teal_700"
+                android:text="Guardar"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Btnmostrar"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="#0ff"
+                android:onClick="viewdata"
+                android:text="Mostrar"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text="Resultado"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

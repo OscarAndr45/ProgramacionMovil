@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:foregroundTint="#009688"
+        android:orientation="vertical"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-70dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="CONSULTA GENERAL"
+                android:textColor="#040000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_height="150dp">
+
+            <ListView
+                android:id="@+id/lvitem"
+                android:layout_width="216dp"
+                android:layout_span="2"
+                android:layout_height="398dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:text="Ingresar" />
+
+            <Button
+                android:id="@+id/btnmodificar"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Modificar" />
+        </TableRow>
+
+        <TableRow
+        android:layout_width="4200dp"
+        android:layout_height="499dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="231dp" >
+
+            <Button
+            android:id="@+id/btnRetirar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retirar" />
+
+        <Button
+            android:id="@+id/btnconsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consultar" />
+
+    </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/Btncontacto"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:background="@color/teal_700"
+                android:text="contacto"
+                android:textColor="#E9E2E2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

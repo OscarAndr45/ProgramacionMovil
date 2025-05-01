@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200"
+        android:foregroundTint="#009688"
+        android:orientation="vertical"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-70dp">
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="INGRESO"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Datos Estudiante"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvnombres"
+                android:text="Nombres:" />
+
+            <EditText
+                android:id="@+id/etnombres"
+                android:hint="Nombres" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvapellidos"
+                android:text="Apellidos:" />
+
+            <EditText
+                android:id="@+id/etapellidos"
+                android:hint="Apellidos" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvdocumento"
+                android:text="Documento:" />
+
+            <EditText
+                android:id="@+id/etdocumento"
+                android:hint="Documento" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvcorreo"
+                android:text="Correo:" />
+
+            <EditText
+                android:id="@+id/etcorreo"
+                android:hint="Correo" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnguardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="Guardar" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvcatedra"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Datos Cátedras"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvnombrecatedra"
+                android:text="Nombres:" />
+
+            <EditText
+                android:id="@+id/etnombrecatedra"
+                android:hint="Nombres" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvhorario"
+                android:text="Horario:" />
+
+            <EditText
+                android:id="@+id/ethorario"
+                android:hint="Horario" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnguardarcatedra"
+                android:layout_span="2"
+                android:text="Guardar" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnvolver"
+                android:layout_span="2"
+                android:text="Volver" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
